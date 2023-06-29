@@ -28,16 +28,17 @@ AFRAME.registerComponent('markers_start',{
 
 			markerEl.setAttribute('registerevents','');
 			sceneEl.appendChild(markerEl);
+			switch(sceneEl){
+				case markersURLArray[0]:
+				
+			const myImage = new Image(397,569);
+			myImage.url = "resources/cards/Carta01";
+			document.body.appendChild(myImage);
+			break;
 
-			//Adding text to each marker
-			var textEl = document.createElement('a-entity');
+			}
+
 			
-			textEl.setAttribute('id','text');
-			textEl.setAttribute('text',{color: 'red', align: 'center', value:markersNameArray[k], width: '5.5'});
-			textEl.object3D.position.set(0, 0.7, 0);
-			textEl.object3D.rotation.set(-90, 0, 0);
-
-			markerEl.appendChild(textEl);
 		}
 	}
 });
