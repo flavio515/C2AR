@@ -29,7 +29,7 @@ AFRAME.registerComponent('markers_start',{
 			markerEl.setAttribute('registerevents','');
 			sceneEl.appendChild(markerEl);
 			switch(sceneEl){
-			case markersURLArray[0]:
+			case markersURLArray:
 				
 			var myImage = new Image(397,569);
 			myImage.url = "resources/cards/Carta01";
