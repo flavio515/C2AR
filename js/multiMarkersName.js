@@ -19,8 +19,8 @@ AFRAME.registerComponent('markers_start',{
 			//console.log(url);
 		}
 
-		//for(var k=0; k<18; k++)
-		//{
+		for(var k=0; k<18; k++)
+		{
 			var markerEl = document.createElement('a-marker');
 			markerEl.setAttribute('type','pattern');
 			markerEl.setAttribute('url',markersURLArray[k]);
@@ -29,15 +29,15 @@ AFRAME.registerComponent('markers_start',{
 			markerEl.setAttribute('registerevents','');
 			sceneEl.appendChild(markerEl);
 			switch(sceneEl){
-			case markersURLArray[1]:
+			case markersURLArray[0]:
 				
 			var myImage = new Image(397,569);
 			myImage.url = "resources/cards/Carta01";
 			document.body.appendChild(myImage);
 			break;
-			case markersNameArray[1]:
+			case markersURLArray[0]:
 			var myImage = new Image(397,569);
-			myImage.url = "resources/cards/Carta01";
+			myImage.url = "resources/cards/Carta02";
 			document.body.appendChild(myImage);
 			break;
 
@@ -45,7 +45,7 @@ AFRAME.registerComponent('markers_start',{
 			}
 
 			
-		//}
+		}
 	}
 });
 
